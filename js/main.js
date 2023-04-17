@@ -13,3 +13,19 @@ bars.addEventListener("click", () => {
     line_top.classList.toggle("line_T")
     cenC.classList.toggle("cen")
 })
+let scrollTo_top = document.getElementById("scrollToTopBtn")
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 700) {
+        scrollTo_top.style.right = "30px";
+    } else {
+        scrollTo_top.style.right = "-70px";
+    }
+})
+
+scrollTo_top.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
