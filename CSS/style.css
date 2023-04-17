@@ -2190,3 +2190,17 @@ a {
         display: none;
     }
 }
+#scrollToTopBtn {
+    background-color: #000;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    right: -70px;
+    bottom: 45px;
+    z-index: 99;
+    transition: var(--main-transition-duration);
+}
